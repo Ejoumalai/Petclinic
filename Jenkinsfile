@@ -1,4 +1,4 @@
-pipeline {
+ure-2pipeline {
     agent any
     tools{
         jdk 'jdk11'
@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Git checkout') {
             steps {
-              git branch: 'main', url: 'https://github.com/Ejoumalai/Petclinic.git'
+              git branch: 'feature-2', url: 'https://github.com/Ejoumalai/Petclinic.git'
             }
         }
         
