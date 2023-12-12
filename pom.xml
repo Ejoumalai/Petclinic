@@ -544,13 +544,29 @@
             </dependencies>
         </profile>
    </profiles>
-
+<distributionManagement>
+    <repository>
+      <id>nexus</id>
+      <name>Releases</name>
+      <url>http://localhost:8081/#admin/repository/repositories:maven-releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>nexus</id>
+      <name>Snapshot</name>
+      <url>http://localhost:8081/#admin/repository/repositories:maven-releases</url>
+    </snapshotRepository>
+  </distributionManagement>
     <repositories>
         <repository>
             <id>repository.spring.milestone</id>
             <name>Spring Milestone Repository</name>
             <url>https://repo.spring.io/milestone</url>
         </repository>
+         <repository>
+             <id>maven-releases</id>
+             <username>admin</username>
+             <password>admin</password>
+          <repository>
     </repositories>
 
 </project>
